@@ -1,3 +1,7 @@
-{ 
-  "allow": ["husky", "hook", "hooks"] 
+{
+    "allow": [
+        "husky",
+        "hook",
+        "hooks"
+    ]
 }

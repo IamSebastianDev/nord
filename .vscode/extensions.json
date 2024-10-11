@@ -1,8 +1,4 @@
 {
-    "recommendations": [
-        "streetsidesoftware.code-spell-checker",
-        "usernamehw.errorlens",
-        "esbenp.prettier-vscode",
-        "wayou.vscode-todo-highlight"
-    ]
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
+  "recommendations": []
 }

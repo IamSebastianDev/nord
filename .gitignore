@@ -1,7 +1,9 @@
 node_modules
-.env
 dist
-coverage
+build
+.env
+.env.local
+.env.development
 
 *.zip
 
@@ -12,9 +14,13 @@ coverage
 
 # Icon must end with two \r
 Icon
+!icon
 
 # Thumbnails
 ._*
+
+# Monorepo stuff
+.turbo
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
