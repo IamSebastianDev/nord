@@ -4,7 +4,7 @@ import { grain, type Grain } from './grain';
 import { readonly } from './readonly';
 
 // INTERNAL USE ONLY
-type GrainValue<T extends readonly Grain<any>[]> = {
+type GrainValue<T extends readonly Grain[]> = {
     [K in keyof T]: T[K] extends Grain<infer U> ? U : never;
 };
 
