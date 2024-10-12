@@ -1,34 +1,36 @@
 {
-  "type": "module",
-  "private": true,
-  "packageManager": "bun@1.0.33",
-  "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
-    "@types/bun": "latest",
-    "alex": "^11.0.1",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
-    "prettier": "^3.3.2",
-    "turbo": "^2.0.6",
-    "typescript": "^5.5.3"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,scss,css,md}": "prettier --write"
-  },
-  "scripts": {
-    "preci": "rm -rf node_modules",
-    "ci": "bun install --frozen-lockfile",
-    "setup": "npx husky init",
-    "lint": "alex .",
-    "dev": "turbo dev",
-    "build": "turbo build",
-    "prepare": "husky"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+    "name": "@grainular/repository",
+    "type": "module",
+    "private": true,
+    "packageManager": "bun@1.1.18",
+    "devDependencies": {
+        "@commitlint/cli": "^19.3.0",
+        "@commitlint/config-conventional": "^19.2.2",
+        "@types/bun": "latest",
+        "alex": "^11.0.1",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.7",
+        "prettier": "^3.3.2",
+        "turbo": "^2.0.6",
+        "typescript": "^5.5.3"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,scss,css,md}": "prettier --write"
+    },
+    "scripts": {
+        "preci": "rm -rf node_modules",
+        "ci": "bun install --frozen-lockfile",
+        "setup": "npx husky init",
+        "lint": "alex .",
+        "dev": "turbo dev",
+        "build": "turbo build",
+        "test": "turbo test"
+    },
+    "workspaces": [
+        "packages/@grainular/*",
+        "packages/@repository/*"
+    ]
 }
