@@ -27,7 +27,7 @@
     "scripts": {
         "preci": "rm -rf node_modules",
         "ci": "bun install --frozen-lockfile",
-        "setup": "npx husky init",
+        "setup": "husky",
         "lint": "alex . && eslint --flag unstable_ts_config",
         "dev": "turbo dev",
         "build": "turbo build",
