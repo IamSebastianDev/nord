@@ -1,5 +1,6 @@
 {
     "name": "@grainular/grains",
+    "version": "1.0.0",
     "type": "module",
     "packageManager": "bun@1.1.18",
     "exports": {

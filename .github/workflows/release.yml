@@ -1,0 +1,20 @@
+# We use this action to release all packages
+# to npm after running through the release
+# ci process of linting, building, testing
+# and generating changesets
+
+name: Release packages
+
+on: 
+    push: 
+        branches: 
+            - main
+
+jobs: 
+    lint:
+        name: Lint
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v4
+        - uses: oven-sh/setup-bun@v2
+        - run: bun run lint
